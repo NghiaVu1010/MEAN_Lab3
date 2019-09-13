@@ -141,12 +141,12 @@ $(function() {
     let divisionData;
     let divisionPicked = sessionStorage.getItem("divisionPick");
 
-    $.getJSON("/api/leagues", (data) => {
+    $.getJSON("http://localhost:3000/leagues/data", (data) => {
         divisionData = data;
         buildList($("#divisionDDL"), divisionData);
 
-        if(divisionPicked != "none") {
-            $.getJSON("/api/teams/byleague/" + $("#divisionDDL").val(), (data) => {
+        if(divisionPicked != null) {
+            $.getJSON("http://localhost:3000/teams/data/byleague/" + $("#divisionDDL").val(), (data) => {
                 displayData(data);
                 $("#teamTable").show();
             });
@@ -160,6 +160,7 @@ $(function() {
     
     // Populate table based on selection
     $("#teamTable").hide();
+
     $("#divisionDDL").on("change", () => {
         $("#teamBody").empty();
 
@@ -177,14 +178,15 @@ $(function() {
         }
         
         // Call to display all teams in that divison
-        $.getJSON("/api/teams/byleague/" + $("#divisionDDL").val(), (data) => {
+        $.getJSON("http://localhost:3000/teams/data/byleague/" + $("#divisionDDL").val(), (data) => {
+            console.log(data);
             displayData(data);
         });
     });
     
     // Preload all teams
     let allData;
-    $.getJSON("/api/teams", function(data) {
+    $.getJSON("http://localhost:3000/teams/data", function(data) {
         allData = data;
     });
 
