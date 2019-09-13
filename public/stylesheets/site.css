@@ -1,0 +1,92 @@
+body {
+    background-color: #000000;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #0683b4;
+}
+
+blockquote:after {
+    display: block;
+    padding-left: 10px;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: 50px;
+    top: 160px;
+    color: #0683b4;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.obli {
+    font-style: oblique;
+}
+
+.shadows {
+    font-weight: bold;
+    font-family: "arial black", helvetica, arial, sans-serif;
+    
+    text-shadow: 3px 3px 8px rgba(255,0,0,0.45);
+}
+
+.white {
+    color: #ffffff;
+}
+
+.bronze {
+    color: #ee963e;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.space-top {
+    padding-top: 20px;
+}
+
+.fa-twitter-square {
+    font-size: 3em;
+    color: #00acee;
+}
+
+.fa-facebook-square {
+    font-size: 3em;
+    color: #3b5998;
+}
+.fa-youtube-square {
+    font-size: 3em;
+    color: #c4302b;
+}
+.fa-instagram {
+    font-size: 2.8em;
+    background: linear-gradient(to bottom left, #cc00ff 0%, #ffff66 100%);
+}

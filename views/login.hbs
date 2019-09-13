@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand obli bronze shadows" href="index.html">Iron Chef</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    
+  <!-- Nav bar links -->
+  <div class="collapse navbar-collapse" id="navbarTop">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link bold bronze shadows" href="teams.html">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bold bronze shadows" href="register.html">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- <div id="chefBanner"><div> -->
+  <div class="container">
+      <h1 class="mt-5 obli bronze shadows text-center">Login</h1>
+    <form class="row justify-content-center white" id="signinForm">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus autocomplete="username email">
+        </div>
+
+        <div class="form-group">        
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required autocomplete="current-password">
+        </div>
+
+        <div class="form-check">
+          <label><input type="checkbox" value="remember-me"> Remember me</label>
+        </div>
+        <small>Don't have an account? Register<a href="register.html"> here!</a></small>
+
+        <button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+      </div>
+    </div>
+  </form>
+</main>
