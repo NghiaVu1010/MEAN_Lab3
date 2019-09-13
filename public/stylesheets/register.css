@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(to left, #800000 0%, #000000 100%);
+}
+
+#chefBanner {
+    background-image: url("../images/IronChefBanner1.jpg");
+    height: 400px; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

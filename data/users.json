@@ -1,17 +1,1 @@
-[
-    {
-        "username": "neo",
-        "email": "neo@test.com",
-        "password": "password123"
-    },
-    {
-        "username": "sara",
-        "email": "neo@test.com",
-        "password": "password123"
-    },
-    {
-        "username": "steve",
-        "email": "steve@steve.com",
-        "password": "password123"
-    }
-]
+[{"username":"neo","email":"neo@test.com","password":"password123"},{"username":"sara","email":"neo@test.com","password":"password123"},{"username":"steve","email":"steve@steve.com","password":"password123"},{"username":"rob","email":"Rob@rob.com","password":"password12"},{"username":"Cate","email":"Cate@cate.com","password":"pass"},{"username":"Cori","email":"Cate@cate.com","password":"pass"},{"username":"Ray","email":"Ray@gmail.com","password":"pass"}]
