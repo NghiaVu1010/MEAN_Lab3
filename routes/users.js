@@ -56,7 +56,7 @@ var getUser = (username) => {
 // GET the login page and render it - WIP
 // http://localhost:3000/users/login
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login' });
+  res.render('login', { sheet: 'login' });
 });
 
 // POST the user login (check to see if exists)
@@ -81,7 +81,7 @@ router.post('/login', function(req, res, next) {
 // GET the registration page and render it - WIP
 // http://localhost:3000/users/register
 router.get('/register', function(req, res, next) {
-  res.render('register', { title: 'Register' });
+  res.render('register', { sheet: 'register' });
 });
 
 // POST the registration account - WIP
