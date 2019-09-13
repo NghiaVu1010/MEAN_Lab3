@@ -17,10 +17,11 @@ $(function() {
         $.post("http://localhost:3000/users/login", data, () => {})
             .done(function() {
                 location.href = "/teams";
-                console.log("Login success");
+                //console.log("Login success");
             })
             .fail(function() {
-                console.log("Login failed");
+                $("#errMsg").html("Incorrect login info!")
+                //console.log("Login failed");
             })
     });
 });
