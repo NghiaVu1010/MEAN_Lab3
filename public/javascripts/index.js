@@ -7,6 +7,8 @@
 
 $(function() {
     // Creates a reference based on what button is clicked
+
+    /*
     $("#navSearch").on("click", function() {
         sessionStorage.setItem("divisionPick", "none");
         location.href = "teams.html";
@@ -27,4 +29,5 @@ $(function() {
         sessionStorage.setItem("divisionPick", "JuniorChef");
         location.href = "teams.html";
     });
+    */
 });

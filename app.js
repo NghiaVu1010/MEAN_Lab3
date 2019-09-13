@@ -10,6 +10,7 @@ const hbs = require("hbs");
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var leaguesRouter = require('./routes/leagues');
+var teamsRouter = require('./routes/teams');
 
 // Connect express to the APP
 var app = express();
@@ -39,6 +40,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/leagues', leaguesRouter);
+app.use('/teams', teamsRouter);
 
 // Catch 404 and forward to error handler
 app.use(function(req, res, next) {
