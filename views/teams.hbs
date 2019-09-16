@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-  <a class="navbar-brand shadows obli" href="index.html">Iron Chef</a>
+  <a class="navbar-brand shadows obli" href="/">Iron Chef</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,12 +7,20 @@
   <!-- Nav bar links -->
   <div class="collapse navbar-collapse" id="navbarTop">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link shadows bold" href="/">Logout</a>
+
+      <li class="nav-item dropdown">
+        
+        <a class="nav-link dropdown-toggle shadows bold" href="#" role="button" data-toggle="dropdown"><img class="rounded" src="images/robicon.png"> My Profile</a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Edit Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/">Logout</a>
+        </div>
       </li>
     </ul>
   </div>
 </nav>
+
 <main>
   <!-- Custom Header with customized button -->
   <header class="container text-center bronze obli mt-5">
