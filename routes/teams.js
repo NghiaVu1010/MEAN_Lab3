@@ -31,7 +31,7 @@ teamsRouter.get('/data', function(req, res, next) {
     }
 });
 
-// GET all teams data
+// GET all teams by divisions
 // http://localhost:3000/teams/data
 teamsRouter.get('/data/byleague/:id', function(req, res, next) {
     let id = req.params.id;
