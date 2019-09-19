@@ -70,12 +70,20 @@ router.post('/login', function(req, res, next) {
 
   // Check authorization of the credentials
   if (authorization.auth.authorize(username, password, users)) {
+      req.session.username = username;
       res.statusCode = 200;
   } 
   else {
       res.statusCode = 403; // Forbidden
   }
   res.end();
+});
+
+router.get('/logout', (req, res) => {
+  // invalidate username in session - until next login
+  req.session.username = null;
+  //res.redirect('/', {sheet: 'index'});
+  res.redirect('/');
 });
 
 // GET the registration page and render it - WIP

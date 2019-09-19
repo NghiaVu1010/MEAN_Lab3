@@ -12,9 +12,16 @@ function getMatchingTeamsByLeague(leagueCode, data)
 // GET home page
 // http://localhost:3000/teams
 teamsRouter.get('/', function(req, res, next) {
-    res.render('teams', { sheet: 'teams' });
+    let session = req.session.username;
+
+    if(session)
+        res.render('teams', { sheet: 'teams' });
+    else
+        res.redirect('/users/register');
 });
 
+// GET all teams data
+// http://localhost:3000/teams/data
 teamsRouter.get('/data', function(req, res, next) {
     try {
         res.end(fs.readFileSync("./data/teams.json"));
@@ -24,6 +31,8 @@ teamsRouter.get('/data', function(req, res, next) {
     }
 });
 
+// GET all teams by divisions
+// http://localhost:3000/teams/data
 teamsRouter.get('/data/byleague/:id', function(req, res, next) {
     let id = req.params.id;
     let data;

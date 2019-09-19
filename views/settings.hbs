@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand shadows obli" href="/">Iron Chef</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    
+  <!-- Nav bar links -->
+  <div class="collapse navbar-collapse" id="navbarTop">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item dropdown">
+        
+        <a class="nav-link dropdown-toggle shadows bold" href="/teams" role="button" data-toggle="dropdown"><img class="rounded" src="images/robicon.png"> My Profile</a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item active" href="#">Edit Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- <div id="chefBanner"><div> -->
+  <div class="container">
+    <h1 class="mt-5 obli bronze shadows text-center">Edit Profile</h1>
+    <form class="row justify-content-center white" id="registerForm">
+      <div class="col-md-4">
+
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus autocomplete="username email">
+        </div>
+        
+        <button class="btn btn-lg btn-success btn-block" type="submit">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</main>
